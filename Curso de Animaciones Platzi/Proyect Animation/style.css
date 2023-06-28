@@ -1,0 +1,514 @@
+/* Index */
+body {
+    counter-reset: score;
+}
+
+input[type="checkbox"]:checked {
+    counter-increment: score;
+}
+
+.total-count {
+    content: counter(score);
+}
+
+.score::after {
+    content: " " counter(score);
+}
+
+/* Globales */
+
+* {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+/* contexto de apilamiento */
+
+.block-arena {
+    background: linear-gradient(266deg, #ffc0cb, #000000);
+    background-size: 200% 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
+    animation: DegradadoCesped 5s ease infinite;
+}
+
+/* Top */
+
+.absolute {
+    position: absolute;
+    overflow: hidden;
+}
+
+.border-cel {
+    display: grid;
+    place-items: center;
+    position: relative;
+    border-radius: 50px;
+    height:  620px;
+    width: 320px;
+    background: linear-gradient(179deg, #ffc0cb, #6c0013);
+    background-size: 400% 400%;
+    box-shadow: 15px 10px 10px 5px rgba(0, 0, 0, 0.3);
+    animation: iphone 2s ease infinite;
+
+}
+
+@keyframes iphone {
+    0%{background-position:0% 0%}
+    50%{background-position:0% 60%}
+    100%{background-position:0% 0%}
+}
+
+.phone {
+    position: absolute;
+    border-radius: 40px;
+    width: 300px;
+    height: 600px;
+    background: linear-gradient(182deg, #00e6ff, #00728c);
+    background-size: 400% 400%;
+    overflow: hidden;
+    animation: sky 5s ease infinite;
+}
+
+@keyframes sky {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+
+/* conejito */
+.layer-1 {
+    z-index: 1;
+    height: 450px;
+    width: 80px;
+    bottom: 0;
+    right: 60px;
+    animation: layer 0.5s ease-in-out infinite;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    appearance: none;
+
+    z-index: 1;
+    width: 100%;
+    height: 80px;
+}
+
+@keyframes layer {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(80px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* conejito */
+.layer-2 {
+    z-index: 2;
+    height: 450px;
+    width: 80px;
+    bottom: 0;
+    left: 60px;
+    animation: layer2 0.5s ease-in-out infinite;
+}
+
+@keyframes layer2 {
+    0% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(80px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* block */
+.layer-3 {
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 200px;
+    width: 200px;
+    height: 400px;
+}
+
+/* Diseño */
+.diseño {
+    position: absolute;
+}
+
+.border-cesped {
+    width: auto;
+    height: 20px;
+    background: green;
+}
+
+.contenedor-zigzag {
+    width: 400px;
+    height: 40px;
+    background: linear-gradient(135deg, green 25%, transparent 25%),
+        linear-gradient(-135deg, green 25%, transparent 25%),
+        linear-gradient(45deg, #aa5a00 25%, transparent 25%) 20px 0px,
+        linear-gradient(-45deg, #aa5a00 25%, transparent 25%) 20px 0px;
+    background-size: 40px 40px;
+    background-repeat: repeat-x;
+}
+
+.borde-tierra {
+    width: 400px;
+    height: 200px;
+    background: #aa5a00;
+}
+
+/* conejito */
+.layer-4 {
+    z-index: 4;
+    height: 350px;
+    width: 80px;
+    bottom: 0;
+    left: 25px;
+    animation: layer3 0.7s ease-in-out infinite;
+}
+
+@keyframes layer3 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(80px);
+    }
+    80% {
+        transform: translateY(80px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* block */
+.layer-5 {
+    z-index: 5;
+    left: 0;
+    bottom: 0;
+    width: 180px;
+    height: 300px;
+}
+/* conejito */
+.layer-6 {
+    z-index: 6;
+    height: 250px;
+    width: 80px;
+    bottom: 0;
+    left: 190px;
+    animation: layer4 0.5s ease-in-out infinite;
+}
+
+@keyframes layer4 {
+    0% {
+        transform: translateY(0);
+    }
+    85% {
+        transform: translateY(80px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Block */
+.layer-7 {
+    z-index: 7;
+    right: 0;
+    bottom: 0;
+    width: 160px;
+    height: 200px;
+}
+
+/* busto verde */
+.layer-8 {
+    z-index: 8;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    bottom: 0;
+    width: 190px;
+    height: 140px;
+}
+
+.busto1 {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 150px;
+    width: 100px;
+    position: absolute;
+    background: green;
+    border-radius: 90%;
+}
+
+.busto2 {
+    height: 70px;
+    width: 120px;
+    bottom: 0;
+    left: 70px;
+    background: green;
+    position: absolute;
+    border-radius: 90% 90% 90% 0%;
+}
+
+.busto3 {
+    height: 100px;
+    width: 120px;
+    bottom: 0;
+    right: 80px;
+    background: green;
+    position: absolute;
+    border-radius: 90% 90% 0% 0%;
+}
+
+/* nube izquierda */
+.layer-9 {
+    z-index: 9;
+    left: 0;
+    bottom: 0;
+    width: 130px;
+    height: 130px;
+}
+
+.nube {
+    background: linear-gradient(266deg, #ffc0cb, #ffffff);
+    background-size: 200% 200%;
+    position: absolute;
+    width: 90px;
+    height: 110px;
+    bottom: 0;
+    border-radius: 80% 70% 50% 0px;
+    animation: Nube 2s ease infinite;
+}
+
+.nube-2 {
+    background: linear-gradient(266deg, #ffc0cb, #ffffff);
+    background-size: 120% 120%;
+    position: absolute;
+    width: 130px;
+    height: 80px;
+    border-radius: 90% 70% 70% 0px;
+    bottom: 0;
+    animation: Nube 2s ease infinite;
+}
+
+@keyframes Nube {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* Nube Derecha */
+.layer-10 {
+    z-index: 10;
+    right: 0;
+    bottom: 0;
+    width: 120px;
+    height: 120px;
+}
+
+.nube-derecha {
+    backface-visibility: visible;
+    transform: rotate3d(0, 25, 0, 200deg) translate(-10px, 140px);
+}
+
+/* Conejos  */
+.left-ear--outer {
+    background: white;
+    border-radius: 90%;
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    left: 10px;
+}
+.left-ear--inner {
+    background: linear-gradient(182deg, #ffffff, #ffc0cb);
+    background-size: 400% 400%;
+    border-radius: 90%;
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    animation: sky 4s ease infinite;
+}
+.right-ear--outer {
+    background: white;
+    border-radius: 90%;
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    right: 10px;
+
+}
+.right-ear--inner {
+    background: linear-gradient(182deg, #ffffff, #ffc0cb);
+    background-size: 400% 400%;
+    border-radius: 90%;
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    animation: sky 4s ease infinite;
+}
+
+@keyframes sky {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+
+.head {
+    background: white;
+    border-radius: 90%;
+    width: 90%;
+    height: 80px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 30px;
+    position: absolute;
+}
+
+.head__eye {
+    background: black;
+    border-radius: 90%;
+    width: 3px;
+    height: 4px;
+    position: absolute;
+    left: 25px;
+    top: 10px;
+
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.head__eye:nth-child(2) {
+    left: 45px;
+}
+
+/* Animation */
+@keyframes blink {
+    5% {
+        transform: scaleY(1);
+    }
+    10% {
+        transform: scaleY(0.2);
+    }
+    15% {
+        transform: scaleY(1);
+    }
+}
+
+.conejo {
+    z-index: 1;
+    height: 450px;
+    width: 80px;
+    position: absolute;
+    cursor: pointer;
+}
+
+/* ---- */
+input:checked + .conejo,
+input:checked {
+    animation-name: die;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes die {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(120px);
+    }
+}
+
+.score-contenedor {
+    z-index: 11;
+    width: auto;
+    height: auto;
+}
+
+.score {
+    z-index: 3;
+    font-size: 2rem;
+    width: 80px;
+    height: 100%;
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: overline;
+    margin: 0 auto;
+    background: linear-gradient(271deg, #ffc0cb, #c64e63);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: text 1s ease infinite;
+}
+
+@keyframes text {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+
+@keyframes DegradadoCesped {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+.title-contenedor {
+    width: auto;
+    height: auto;
+    margin-top: 40px;
+}
+
+.title {
+    font-weight: 300;
+    height: auto;
+    width: 215px;
+    margin: 0 auto;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 7.5px;
+    font-size: 3rem;
+    background: linear-gradient(179deg, #dddddd, #3a525c);
+    background-size: 200% 120%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: title 2s ease infinite;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes title {
+    0%{background-position:0% 20%}
+    50%{background-position:20% 40%}
+    100%{background-position:20% 0%}
+}

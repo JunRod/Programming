@@ -1,0 +1,53 @@
+body{
+    padding-top: 50rem;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.one {
+    left: -90rem;
+    position: relative;
+    height: 30rem;
+    width: 90rem;
+    background-color: greenyellow;
+}
+
+.two {
+    position: relative;
+    right: -90rem;
+    height: 30rem;
+    width: 90rem;
+    background-color: aqua;
+}
+
+.three {
+    position: relative;
+    right: -90rem;
+    height: 30rem;
+    width: 90rem;
+    background-color: blueviolet;
+}
+
+.four {
+    position: relative;
+    right: -90rem;
+    height: 90rem;
+    width: 90rem;
+    background-color: transparent;
+}
+
+.ola {
+    height: 1rem;
+    width: 1rem;
+    background-color: aqua;
+    top: 0;
+}
+
+
+.nuevoObjeto {
+    height: 3rem;
+    width: 3rem;
+    background-color: red;
+    top: 0;
+}

@@ -1,0 +1,13 @@
+@import "base/normalize";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+@import "base/variables";
+@import "base/minxis";//es importante el orden en que se registran los modulos, en este caso los ponemos despues del variables ya que podemos usar variables en los mixins y estos mixins ya cargados en los globales.
+@import "base/globales";
+@import "base/utilidades";
+@import "layout/header";
+@import "layout/video";
+@import "layout/seccion";
+@import "layout/lineup";
+@import "layout/galeria";
+@import "layout/boletos";
+@import "layout/footer";

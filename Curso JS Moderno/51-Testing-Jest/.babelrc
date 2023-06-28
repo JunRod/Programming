@@ -1,0 +1,11 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env", {
+                "targets": { //rtargets son versiones que va a soportar
+                    "node": "current"
+                }
+            }
+        ]
+    ]
+}

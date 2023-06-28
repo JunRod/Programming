@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen</title>
+  </head>
+  <body>
+    <header>
+      <h1>Examen Final</h1>
+    </header>
+    <main>
+      <form>
+        <table border="2">
+          <caption>
+            1. Escojer opciones correctas
+          </caption>
+          <thead>
+            <tr>
+              <th colspan="2">3 Opciones / 1 Respuesta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Animal Famoso del Perú</td>
+              <td>
+                <label for="c"></label>
+                Canguro
+                <input type="radio" value="canguro" name="animal" id="c" />
+                <label for="gr"></label>
+                Gallito de las Rocas
+                <input
+                  type="radio"
+                  value="gallito de las rocas"
+                  name="animal"
+                  id="gr"
+                />
+                <label for="tr"></label>
+                Tortuga
+                <input type="radio" name="animal" value="tortuga" id="tr" />
+              </td>
+            </tr>
+            <tr>
+              <td>Maravillas de mundo</td>
+              <td colspan="1">
+                <input type="text" list="maravillas" placeholder="Opciones" />
+                <datalist id="maravillas">
+                  <option value="MachuPicchu">Perú</option>
+                  <option value="Callao">Perú</option>
+                  <option value="Lima">Perú</option>
+                </datalist>
+              </td>
+            </tr>
+            <tr>
+              <td>Pisco famoso del perú</td>
+              <td>
+                <label for="ron"></label>
+                Ron
+                <input type="checkbox" name="ron" value="ron" id="ron" />
+                <label for="sauer"></label>
+                Pisco Sauer
+                <input type="checkbox" name="ron" value="sauer" id="sauer" />
+                <label for="cartavio"></label>
+                Cartavio
+                <input
+                  type="checkbox"
+                  name="ron"
+                  value="cartavio"
+                  id="cartavio"
+                />
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">
+                <!-- enviar con button con alerta  -->
+                <button type="submit" onclick="alert('¡Hola, señor!')">
+                  Enviar Examen
+                </button>
+                <!-- boton de reset -->
+                <button type="reset">Eh papá borrá todo</button>
+                <!-- enviar con imagen -->
+                <input
+                  type="image"
+                  src="images/2.png"
+                  width="200"
+                  height="200"
+                  alt="enviar"
+                />
+                <!-- boton input enviar normal  -->
+                <input type="submit" value="e" />
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </form>
+      <!-- Ejercicio 2 / indicar cual es el valor del tanque -->
+
+      <p>Ejercicio 2.</p>
+      <picture>
+        <source
+          srcset="images/gasolina-mobile.webp, images/gasolina-mobile.jpg"
+          media="(max-width:1365px)"
+        />
+        <img src="images/gasolina.webp" alt="gasolina" />
+      </picture>
+      <form action="preguntafinal.html">
+        <table border="2">
+          <caption>
+            Gasolina
+          </caption>
+          <thead>
+            <tr>
+              <th colspan="2">1 Pregunta / 1 Respuesta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p>¿Cual es el valor de la gasolina?</p>
+              </td>
+              <td>
+                <select name="Valores">
+                  <optgroup label="Optinum">
+                    <option value="90%">90%</option>
+                    <option value="70%">70%</option>
+                  </optgroup>
+                  <optgroup label="high">
+                    <option value="60%" selected>60%</option>
+                    <option value="40%">40%</option>
+                  </optgroup>
+                  <optgroup label="Low">
+                    <option value="20%">20%</option>
+                  </optgroup>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">
+                <button type="submit" onclick="alert('Correcto!')">
+                  Enviar Examen
+                </button>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </form>
+      <form>
+        <label for="gasolita">Gasolina</label>
+        <meter
+          id="gasolita"
+          min="0"
+          max="100"
+          value="70"
+          low="20"
+          high="60"
+          optimum="61"
+        ></meter>
+      </form>
+      <p>Ejercicio 3.</p>
+      <form>
+        <fieldset>
+          <legend>Escucha</legend>
+          <p><strong>¿Que canción es?</strong></p>
+          <audio
+            src="contenido-embebido\That’s Life_160k.mp3"
+            id="DescargarAudio"
+            controls
+            autoplay
+            muted
+          ></audio>
+          <br />
+          <label for="pregunta">Respuesta:</label>
+          <input
+            type="text"
+            name="pregunta"
+            id="pregunta"
+            placeholder="Escribe aquí"
+          />
+        </fieldset>
+      </form>
+      <p><u>Lucquitas paquetá</u></p>
+      <video
+        src="contenido-embebido/Lucas Paqueta Dance Compilation🤩_720P HD.mp4"
+        controls
+        loop
+        muted
+        poster="contenido-embebido/Stuff.png"
+      ></video>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+.header {
+    background-color: $verde;
+
+    .contenido-header {
+        padding: calc($separacion / 2) 0;
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    h1 {
+        color: $blanco;
+        margin-bottom: 1rem;
+        text-align: center;
+        @include tablet {
+            margin-bottom: 0;
+        }
+    }
+
+    &.fijo {
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 1rem 1rem darken(rgba(0,0,0,0.3), $amount: 4);
+    }
+}
+
+.navegacion-principal {
+    //display: grid;
+    //grid-template-columns: repeat(3, 1fr);
+    //column-gap: 2rem;
+    //Lo de abajo pero en grid, esto añade separcion entre los enlaces del header.
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    a {
+        color: $blanco;
+        font-size: 2rem;
+        &:hover{
+            color: $amarillo;
+            // el & hace referencia al elemento que rodea al selector, en este caso al que rodea el elemento hover: a
+        }
+    }
+
+}

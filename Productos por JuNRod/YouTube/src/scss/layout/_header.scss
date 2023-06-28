@@ -1,0 +1,166 @@
+.header {
+    z-index: 1;
+    background-color: $gris;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.8rem;
+    .header-left,
+    .header-center,
+    .header-right {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .header-right {
+        justify-content: flex-end;
+    }
+}
+
+
+
+input[type="checkbox"] {
+    appearance: none;
+    cursor: pointer;
+    left: 2rem;
+    bottom: 62rem;
+    position: absolute;
+    z-index: 4;
+    width: 4rem ;
+    height: 2.5rem;
+}
+
+.hamburger-icon {
+    z-index: 1;
+    margin: 0 0 0 2rem;
+    height: auto;
+    width: auto;
+    display: inherit;
+    align-items: inherit;
+    cursor: pointer;
+
+    .hamburger-icon-overlay {
+        position: absolute;
+        border-top: 1.7px solid $blanco;
+        border-bottom: 1.7px solid $blanco;
+        height: 1.4rem;
+        width: 1.8rem;
+    }
+
+    .hamburger-icon-over {
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        top: calc(100% - 50%);
+        background-color: $blanco;
+    }
+}
+
+.youtube-icon {
+    margin: 0 0 0 3rem;
+    cursor: pointer;
+    height: 40px;
+    width: 120px;
+    img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.header-center {
+    .contenedor-input {
+        flex-grow: 1;
+        border: 1px solid $gris-claro;
+        border-radius: 2px 0 0 2px;
+        padding: 0.4rem 0 0.4rem 0.4rem;
+        background-color: darken($grisOscuro, 2);
+        &:active {
+            //esto se puede arreglar, poniendole un input del tamaño del contenedor buscar, y cuando haga cheked, se dibuje el border azul. cuando se haga descheked automaticamente el border dejara de estar.
+            border: 1px solid #065fd4;
+            border-radius: 1.5px 0 0 1.5px;
+            &:hover {
+                border: 1px solid #065fd4;
+                border-radius: 1.5px 0 0 1.5px;
+            }
+        }
+    }
+
+    input {
+        background-color: transparent;
+        height: 3rem;
+        width: 55rem;
+        border: none;
+        outline: none;
+        font-size: 1.7rem;
+        color: $blanco;
+        font-family: $fuentePrincipal;
+    }
+
+    .buscador {
+        flex-grow: 0;
+        cursor: pointer;
+        display: flex;
+        height: 40px;
+        width: 90px;
+        background-color: $gris-claro;
+        position: relative;
+        img {
+            position: absolute;
+            height: 2rem;
+            width: auto;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top: 10px;
+        }
+    }
+
+    .microphone {
+        margin-left: 1rem;
+        cursor: pointer;
+        width: auto;
+        height: auto;
+        background-color: darken($gris, 3);
+        border: 1px solid darken($gris, 3);
+        border-radius: 120%;
+        padding: 0.7rem;
+        img {
+            height: 22px;
+            width: 31px;
+        }
+    }
+}
+
+.header-right-icons {
+    margin: 0 2rem 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: calc($separacion / 2.5);
+    cursor: pointer;
+    img {
+        &:nth-of-type(1) {
+            width: 30px;
+            height: 25px;
+        }
+        &:nth-of-type(2) {
+            bottom: 30rem;
+            width: 20px;
+            height: 20px;
+        }
+        &:nth-of-type(3) {
+            width: 25px;
+            height: 25px;
+        }
+    }
+    .contenedor_foto {
+        width: 30px;
+        height: 30px;
+        .foto {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 60%;
+        }
+    }
+}
