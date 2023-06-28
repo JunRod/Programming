@@ -1,0 +1,23 @@
+html {
+    font-size: 62.5%; //10px = 1rem;
+    box-sizing: border-box;
+}
+
+body {
+    height: 608px;
+    width: 100%;
+
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}

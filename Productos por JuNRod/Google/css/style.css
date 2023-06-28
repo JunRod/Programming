@@ -1,0 +1,252 @@
+:root {
+    --fondoColor: rgb(32, 33, 36);
+    --blanco: #fff;
+    --fontText: "arial", "sans-serif";
+    --colorBuscadoreBg:#303134;
+    --colorBuscadorBorde: #5F6368;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  }
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,*:before,*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--fondoColor);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a {
+    font-family: var(--fontText);
+    text-decoration: none;
+}
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.contenedor-enlaces {
+    width: 100%;
+    flex-grow: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.enlaces {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 1.7rem;
+    align-items: center;
+    padding: 1.4rem;
+    padding-right: 2rem;
+    font-size: 1.3rem;
+}
+
+.enlaces a{
+    line-height: 0;
+    color: var(--blanco);
+
+}
+
+.enlaces img {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    flex-shrink: 12;
+}
+
+.enlaces img {
+    object-fit: cover;
+}
+
+.enlaces img:hover {
+    z-index: -1;
+    border-radius: 50%;
+    background-color: hsla(206, 5%, 58%, 0.1);
+    box-shadow: 0 0 0 0.45rem hsla(206, 5%, 58%, 0.1);
+}
+
+.iconify {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-left: 10px;
+    margin-right: 1px;
+    fill-opacity: 0.9;
+
+}
+
+.iconify:hover {
+    z-index: -1;
+    border-radius: 50%;
+    background-color: hsla(206, 5%, 58%, 0.15);
+    box-shadow: 0 0 0 0.75rem hsla(206, 5%, 58%, 0.15);
+}
+
+.gmail {
+    margin-right: -2px;
+}
+
+/* Main */
+
+.buscador_logo h1 {
+    color: var(--blanco);
+    font-family: "Product Sans";
+    font-size: 8.3rem;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 0rem;
+    padding: 4.5rem 0 7.9rem 0;
+    letter-spacing: 0.2rem;
+
+}
+
+.buscador_input{
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.16rem solid var(--colorBuscadorBorde);
+    border-radius: 3rem;
+    width: 58.5rem;
+    height: 4.5rem;
+    font-size: 1.6rem;
+}
+
+.buscador_input:hover {
+    background-color: var(--colorBuscadoreBg);
+    border: 1px solid var(--colorBuscadoreBg);
+    box-shadow: 0 0 1rem 0.6px #1B1B1B;
+    border-radius: 3rem;
+}
+
+.micro {
+    height: 2rem;
+    width: 1.4rem;
+    margin: 1.6rem 2.3rem 1.6rem 0rem;
+}
+
+.lupa {
+    height: 1.7rem;
+    width: 1.7rem;
+    margin-left: 1.4rem;
+}
+
+.buscador_entrada {
+    background-color: transparent;
+    border-color: transparent;
+    width: 50rem;
+    height: 4rem;
+    outline: none;
+    color: #fff;
+    font-family: arial, sans-serif;
+}
+
+
+/* Botones */
+.buscador_buttons {
+    width: 33rem;
+    margin: 3.0rem auto;
+    display:flex;
+    justify-content: space-between;
+}
+
+.buscador_buttons a{
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    text-align: center;
+    color: var(--blanco);
+    background-color: var(--colorBuscadoreBg);
+    padding: 1rem 1.7rem;
+    border-radius: 0.5rem ;
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.buscador_buttons a:hover {
+    box-shadow: inset 0 0 0 1px var(--colorBuscadorBorde);
+}
+
+.buscador_footer {
+    text-align: center;
+    font-family: 'Product Sans';
+    font-size: 1.3rem;
+}
+
+.buscador_footer p {
+    color: #bdc1c6;
+    margin-top: 1rem;
+}
+
+.buscador_footer a {
+    color: #8ab4f8;
+    padding: 0.4rem;
+
+}
+
+/* Footer */
+
+.contenedor-footer {
+    font-size: 1.6rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.diseño {
+    border-bottom: 1px solid #212327;
+    color: #909497;
+    padding: 1.4rem 3.3rem;
+    background-color: #171717;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.diseño p {
+    font-size: 1.6rem;
+    font-family: arial, sans-serif;
+}
+
+.diseño a {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.diseño:last-of-type{
+    border-bottom: 0;
+    padding:  0 3rem;
+    line-height: 4.5rem;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+    .diseño:last-of-type {
+        column-gap: 18rem;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+}
+
+.diseño_links {
+    white-space: nowrap;
+
+}

@@ -1,0 +1,66 @@
+@import "react-image-gallery/styles/css/image-gallery.css";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.css-10hburv-MuiTypography-root {
+  font-size: 1.1rem !important;
+  font-family: "Lato" sans-serif !important;
+  font-weight: 700 !important;
+}
+
+.image-gallery-thumbnail.active {
+  border: 4px solid #007500 !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .image-gallery-thumbnail:hover {
+    outline: none;
+    border: 4px solid #003800;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .image-gallery-icon:hover {
+    color: #007500;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .image-gallery-bullets .image-gallery-bullet:hover {
+    background: #007500;
+    border: 1px solid #007500;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .image-gallery-bullets .image-gallery-bullet.active:hover {
+    background: #007500;
+  }
+}
+
+a:visited {
+  color: unset;
+}
+
+.red {
+  background-color: rgb(255, 80, 80);
+}
+.green {
+  background-color: rgb(122, 255, 122);
+}
+.orange {
+  background-color: rgb(255, 203, 105);
+}
+.blue {
+  background-color: rgb(108, 108, 255);
+}
+.pink {
+  background-color: rgb(255, 126, 147);
+}
+.brown {
+  background-color: rgb(255, 125, 125);
+}
+
+

@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing a objeto cliete es Jun 1`] = `
+{
+  "nombre": "JuNRod",
+  "precio": 300,
+}
+`;

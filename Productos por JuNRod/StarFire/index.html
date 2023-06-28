@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StartFire / Efect Parallax</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./build/css/app.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="moon object" data-value="-2"></div>
+        <img src="./src/img/1.png" alt="1" class="one object" data-value="10" />
+        <img src="./src/img/2.png" alt="2" class="two object" data-value="1" />
+        <img src="./src/img/1.png" alt="1" class="three object" data-value="5" />
+        <div class="rellenador object" data-value="5"></div>
+        <div class="rellenador2"></div>
+        <img src="./src/img/1.png" alt="1" class="four object" data-value="-7" />
+        <img src="./src/img/1.png" alt="1" class="five object" data-value="-1" />
+        <div class="destello"></div>
+        <div class="destello2"></div>
+        <!-- starts -->
+        <div class="stars">
+        </div>
+        <div class="starsfires">
+        </div>
+
+        <audio controls id="audio-stars">
+            <source src="./src/mp3/80s Remix_ Tronicbox Somebody That I Used To Know Gotye.mp3" type="audio/mp3">
+        </audio>
+        <audio controls id="audio-meteors">
+            <source src="./src/mp3/Space Meteor Comet Burning Sound Effect.mp3" type="audio/mp3">
+        </audio>
+
+        <div class="container-button" id="play">
+            <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 448 512"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" fill="currentColor"></path></svg>
+            <svg class="pause-btn hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 448 512"><path d="M144 479H48c-26.5 0-48-21.5-48-48V79c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48zm304-48V79c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48z" fill="currentColor"></path></svg>
+        </div>
+    </div>
+    <script src="./build/js/app.js"></script>
+</body>
+
+</html>
